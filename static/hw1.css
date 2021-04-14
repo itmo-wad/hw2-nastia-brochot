@@ -1,0 +1,50 @@
+.html,
+.body {
+    margin: 0;
+}
+
+.mygallery {
+    top: 100px;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.mygallery *{
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 33.33%;
+    -ms-flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 5px;
+    margin-top: 10px;
+}
+
+.column img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        -ms-flex: 50%;
+        max-width: 50%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        -ms-flex: 100%;
+        max-width: 100%;
+    }
+}
